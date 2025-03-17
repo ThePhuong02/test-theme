@@ -1,6 +1,26 @@
 .contact img {
   max-width: 100%;
 }
+.contact-page {
+  background-image: url('https://www.bigfootdigital.co.uk/wp-content/uploads/2020/07/image-optimisation-scaled.jpg'); /* Đường dẫn ảnh nền */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0; /* Tạo khoảng cách trên dưới */
+  min-height: 100vh; /* Đảm bảo chiều cao tối thiểu */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Nếu form nằm trong một div khác, đảm bảo nó căn giữa */
+.contact {
+  background: rgba(255, 255, 255, 0.8); /* Tạo nền trắng mờ cho form */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 
 .contact .form__message {
   align-items: flex-start;
