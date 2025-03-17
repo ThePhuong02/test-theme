@@ -17,12 +17,15 @@
 
     <title>
       {{ page_title }}
+      | Official Store
       {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
       {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
       {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
     </title>
 
-    {% if page_description %}
+    {% if page_description == blank %}
+      <meta name="description" content="I want to test the interface">
+    {% else %}
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
 
